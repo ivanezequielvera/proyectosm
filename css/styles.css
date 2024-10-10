@@ -1,5 +1,5 @@
 /* index.html */
-body {
+body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -26,6 +26,8 @@ header {
     text-align: center;
 }
 footer{
+    font-size: 12px;
+    height: 20px;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -69,7 +71,13 @@ nav {
     font-size: 1.5rem;
     cursor: pointer;
 }
+/* SERVICE.HTML */
 
+
+/* ABOUT.HTML */
+#about{
+    text-align: center;
+}
 /* Mostrar el menú en dispositivos más grandes */
 @media (min-width: 768px) {
     .menu {
