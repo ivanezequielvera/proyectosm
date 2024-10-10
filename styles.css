@@ -1,0 +1,85 @@
+/* index.html */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    flex: 1;
+}
+header {
+    background-color: black;
+    padding: 1rem;
+    color: #fff;
+}
+.logo {
+    text-align: center;
+    color: #fff;
+}
+.welcome{
+    text-align: center;
+}
+.contact{
+    text-align: center;
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Separa el logo del menú */
+    align-items: center;
+}
+
+
+.menu {
+    list-style: none;
+    display: none; /* Oculto por defecto */
+    flex-direction: column; /* Hace que los elementos sean verticales */
+    background-color: #333;
+    position: absolute;
+    right: 1rem;
+    top: 60px; /* Alineado debajo del botón */
+    padding: 0;
+}
+
+.menu li {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #444;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Mostrar el menú en dispositivos más grandes */
+@media (min-width: 768px) {
+    .menu {
+        display: flex; /* Muestra el menú horizontalmente */
+        flex-direction: row;
+        position: static; /* No es necesario que sea absoluto en pantallas grandes */
+        background: none;
+    }
+
+    .menu-toggle {
+        display: none; /* Oculta el botón de menú en pantallas grandes */
+    }
+}
