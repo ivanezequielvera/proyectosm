@@ -1,0 +1,11 @@
+/* ABOUT.HTML */
+header {
+    background-color: rgba(255, 255, 255, 0.288);
+    padding: 1rem;
+    color: #fff;
+}
+#about{
+    background-color: white;
+    text-align: center;
+    color: white;
+}
